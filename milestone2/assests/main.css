@@ -1,0 +1,174 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('/assets/images/profile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #00796b, #004d40); /* Unique gradient background */
+    padding: 8px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for a floating effect */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-brand img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.navbar-brand-text {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+h1 {
+    color: #f0f4f3;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* Resume Container */
+.resume-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.3)); /* Soft gradient background */
+    margin: 50px auto;
+    padding: 30px;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Strong shadow for depth */
+    backdrop-filter: blur(12px); /* Subtle blur effect */
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #004d40;
+    border-bottom: 2px solid #00796b; /* Accent color for the border */
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Profile Picture */
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+    background-color: #00796b; /* Unique teal color */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker shade on hover */
+}
+
+/* Skills List */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #00796b;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #004d40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .resume-container {
+        width: 90%;
+    }
+
+    .navbar-brand-text {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
